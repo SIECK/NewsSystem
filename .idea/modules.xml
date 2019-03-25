@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.iml" filepath="$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.test.iml" />
+    </modules>
+  </component>
+</project>
