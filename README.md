@@ -6,3 +6,4 @@ Faza przygotowania
 	4. Zainstaluj jakiś requester http (firefox HttpRequester, chrome Advanced REST Client)  
 Faza testowania  
 	1. Przetestuj metody GET, POST, PUT, DELETE (Lekcja 5.6)  
+	2. nanana
