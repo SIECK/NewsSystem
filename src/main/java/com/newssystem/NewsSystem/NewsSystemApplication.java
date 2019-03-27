@@ -30,10 +30,10 @@ public class NewsSystemApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		News news = new News("Narodziny", "Urodzil sie KG", "13/12/1997");
+		News news = new News("Tytul", "Tresc", "01.01.2001", "Autor");
 		newsService.create(news);
 
-		Comment comment = new Comment("123", "Super!", "Jan Kowalski", "14/12/1997");
+		Comment comment = new Comment("1", "Komentarz", "Autor", "02.01.2001");
 		commentService.create(comment);
 	}
 }
