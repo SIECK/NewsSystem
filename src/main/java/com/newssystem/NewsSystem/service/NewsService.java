@@ -35,7 +35,7 @@ public class NewsService implements ServiceInterface<News>{
         dto.setData(model.getData());
         dto.setText(model.getText());
         dto.setTitle(model.getTitle());
-
+        dto.setAuthor(model.getAuthor());
         return dto;
     }
 

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90cdfa7a-3654-4180-86d5-c22c6b6adcdb" name="Default Changelist" comment="Rozpoczęcie pracy nad walidacją i stworzenie metod pod testy.">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.newssystem.NewsSystem.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/NewsSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/NewsSystemApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/rest/AppRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/rest/AppRESTController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/NewsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/newssystem/NewsSystem/NewsSystemApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/newssystem/NewsSystem/NewsSystemApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -78,37 +73,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/newssystem/NewsSystem/NewsSystemApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/rest/AppRESTController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="728">
+              <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,70 +85,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/NewsSystemApplication.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/rest/AppRESTController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/CustomInterfaceComment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/Comment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/News.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/repository/NewsRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/repository/CommentRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="765">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,14 +119,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/CustomInterfaceComment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/repository/CommentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/ServiceInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/rest/AppRESTController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/CommentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/NewsService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/newssystem/NewsSystem/NewsSystemApplicationTests.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/News.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/NewsSystemApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/NewsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/Comment.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/newssystem/NewsSystem/NewsSystemApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/rest/AppRESTController.java" />
       </list>
     </option>
   </component>
@@ -234,8 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,6 +182,15 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="NewsSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewsSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="NewsSystem" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -295,6 +210,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="NewsSystem" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewsSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsSystem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="NewsSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NewsSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -321,6 +245,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,7 +256,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553684692828" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553788270345" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -351,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NewsSystemApplication">
+  <component name="RunManager" selected="JUnit.NewsSystemApplicationTests.testCreateNews">
     <configuration name="NewsSystemApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.newssystem.NewsSystem.test" />
       <extension name="coverage">
@@ -368,6 +294,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NewsSystemApplicationTests.testCreateNews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.newssystem.NewsSystem.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.newssystem.NewsSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.newssystem.NewsSystem" />
+      <option name="MAIN_CLASS_NAME" value="com.newssystem.NewsSystem.NewsSystemApplicationTests" />
+      <option name="METHOD_NAME" value="testCreateNews" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NewsSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="com.newssystem.NewsSystem.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.newssystem.NewsSystem.NewsSystemApplication" />
@@ -377,6 +319,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NewsSystemApplicationTests.testCreateNews" />
         <item itemvalue="JUnit.NewsSystemApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
@@ -404,35 +347,59 @@
       <workItem from="1553531503390" duration="387000" />
       <workItem from="1553625754329" duration="281000" />
       <workItem from="1553683094907" duration="1658000" />
-      <workItem from="1553714074184" duration="3005000" />
+      <workItem from="1553714074184" duration="4506000" />
+      <workItem from="1553784293992" duration="3957000" />
     </task>
+    <task id="LOCAL-00001" summary="Rozpoczęcie pracy nad walidacją i stworzenie metod pod testy.">
+      <created>1553717872211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553717872211</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewsSystemApplicationTests_contextLoads - 2019.03.25 at 15h 26m 55s.xml">
-      <configuration name="NewsSystemApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 01m 48s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewsSystemApplicationTests_contextLoads - 2019.03.26 at 19h 43m 11s.xml">
-      <configuration name="NewsSystemApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 02m 49s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewsSystemApplicationTests_contextLoads - 2019.03.27 at 11h 48m 42s.xml">
-      <configuration name="NewsSystemApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 03m 09s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewsSystemApplicationTests_contextLoads - 2019.03.27 at 11h 59m 42s.xml">
-      <configuration name="NewsSystemApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 03m 25s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewsSystemApplicationTests_contextLoads - 2019.03.27 at 20h 45m 04s.xml">
-      <configuration name="NewsSystemApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 06m 42s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 07m 50s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 10m 08s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 10m 15s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 45m 52s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewsSystemApplicationTests_testCreateNews - 2019.03.28 at 16h 48m 58s.xml">
+      <configuration name="NewsSystemApplicationTests.testCreateNews" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31956000" />
+    <option name="totallyTimeSpent" value="37414000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1216" height="1896" extended-state="6" />
+    <frame x="1912" y="-841" width="1216" height="1896" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2032872" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2067474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -442,8 +409,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32841748" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40379405" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32841748" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40328985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -452,7 +419,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3295519" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295519" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
@@ -532,87 +499,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/ServiceInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/CommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/config/DatabaseConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/repository/NewsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/repository/CommentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/rest/AppRESTController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/CustomInterfaceComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -628,10 +516,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/NewsSystemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/config/DatabaseConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/ServiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/repository/NewsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/domain/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="612">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -648,17 +575,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/newssystem/NewsSystem/NewsSystemApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/CommentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        <state relative-caret-position="646">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/NewsSystemApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/CustomInterfaceComment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/service/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/repository/CommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/newssystem/NewsSystem/NewsSystemApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newssystem/NewsSystem/rest/AppRESTController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

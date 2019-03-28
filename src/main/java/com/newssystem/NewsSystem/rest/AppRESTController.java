@@ -7,7 +7,9 @@ import com.newssystem.NewsSystem.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("api/news")
@@ -32,9 +34,14 @@ public class AppRESTController {
     List<Comment> findAllComments() {return commentService.getObj(); }
 
     @RequestMapping(method = RequestMethod.POST, value = "/saveNews")
-    public @ResponseBody
-    News create(@RequestBody News newsEntity){
-        return newsService.create(newsEntity);
+    public @ResponseBody Map<String, Object> create(@RequestBody News newsEntity){
+
+        Map<String, Object> response = new LinkedHashMap<>();
+        newsService.create(newsEntity);
+        response.put("message", "News created");
+        response.put("news", newsService.create(newsEntity));
+
+        return response;
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/saveComment")
