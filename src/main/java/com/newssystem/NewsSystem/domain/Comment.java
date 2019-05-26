@@ -1,8 +1,7 @@
 package com.newssystem.NewsSystem.domain;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,6 +10,7 @@ import javax.validation.constraints.Size;
 
 @Data
 @Document
+@NoArgsConstructor
 public class Comment {
 
     @Id
@@ -29,9 +29,6 @@ public class Comment {
 
     @NotNull(message = "Pole nie moze byc puste")
     private String data;
-
-    public Comment() {
-    }
 
     public Comment(String newsId, String comment, String author, String data) {
         NewsId = newsId;
