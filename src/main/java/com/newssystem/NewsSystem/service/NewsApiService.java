@@ -35,10 +35,10 @@ public class NewsApiService implements ServiceInterface<News> {
     private News convertToDTO(Story model) {
         News dto = new News();
         dto.setId(model.getId().toString());
-        dto.setData(model.getPublishedAt().toDate().toString());
+        dto.setData(model.getPublishedAt().toString());
         dto.setText(model.getBody());
         dto.setTitle(model.getTitle());
-        dto.setAuthor(model.getAuthor().toString());
+        dto.setAuthor(model.getAuthor().getName());
         return dto;
     }
 
