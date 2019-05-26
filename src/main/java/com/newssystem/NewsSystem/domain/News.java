@@ -29,7 +29,8 @@ public class News {
     @Size(min = 1)
     private String author;
 
-    public News() {}
+    public News() {
+    }
 
     public News(String title, String text, String data, String author) {
         this.title = title;
@@ -37,4 +38,5 @@ public class News {
         this.data = data;
         this.author = author;
     }
+
 }
