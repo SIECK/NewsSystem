@@ -1,6 +1,7 @@
 package com.newssystem.NewsSystem.domain;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -9,6 +10,7 @@ import javax.validation.constraints.Size;
 
 @Data
 @Document
+@NoArgsConstructor
 public class News {
 
     @Id
@@ -29,12 +31,11 @@ public class News {
     @Size(min = 1)
     private String author;
 
-    public News() {}
-
     public News(String title, String text, String data, String author) {
         this.title = title;
         this.text = text;
         this.data = data;
         this.author = author;
     }
+
 }

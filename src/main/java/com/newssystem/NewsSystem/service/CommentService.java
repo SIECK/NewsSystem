@@ -46,9 +46,10 @@ public class CommentService implements ServiceInterface<Comment>, CustomInterfac
     }
 
     @Override
-    public Comment finById(String id) {
+    public Comment findById(String id) {
         return null;
     }
+
 
     @Override
     public Comment update(Comment obj) {
