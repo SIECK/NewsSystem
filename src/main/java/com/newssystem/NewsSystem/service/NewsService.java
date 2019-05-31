@@ -10,7 +10,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 @Service
-public class NewsService implements ServiceInterface<News>{
+public class NewsService implements ServiceInterface<News> {
 
     private NewsRepository newsRepository;
 
@@ -25,18 +25,19 @@ public class NewsService implements ServiceInterface<News>{
         return convertToDTOs(newsList);
     }
 
-    private List<News> convertToDTOs(List<News> models){
+    private List<News> convertToDTOs(List<News> models) {
         return models.stream().map(this::convertToDTO).collect(toList());
     }
 
-    private News convertToDTO(News model){
-        News dto = new News();
-        dto.setId(model.getId());
-        dto.setData(model.getData());
-        dto.setText(model.getText());
-        dto.setTitle(model.getTitle());
-        dto.setAuthor(model.getAuthor());
-        return dto;
+    private News convertToDTO(News model) {
+        News.Builder dto = new News.Builder();
+        dto
+                .id(model.getId())
+                .data(model.getData())
+                .text(model.getText())
+                .title(model.getTitle())
+                .author(model.getAuthor());
+        return dto.build();
     }
 
     @Override
