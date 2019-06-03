@@ -5,6 +5,7 @@ import com.newssystem.NewsSystem.domain.News;
 import com.newssystem.NewsSystem.service.CommentService;
 import com.newssystem.NewsSystem.service.NewsApiService;
 import com.newssystem.NewsSystem.service.NewsService;
+import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -32,25 +33,19 @@ public class AppRESTController {
         this.newsApiService = newsApiService;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/getNews")
+    @GetMapping(value = "/getNews")
     public @ResponseBody
     List<News> findAllNews() {
         return newsService.getObj();
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/getApiNews")
-    public @ResponseBody
-    List<News> findAllNewsFromApi() {
-        return newsApiService.getObj();
-    }
-
-    @RequestMapping(method = RequestMethod.GET, value = "/getComments")
+    @GetMapping(value = "/getComments")
     public @ResponseBody
     List<Comment> findAllComments() {
         return commentService.getObj();
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/saveNews")
+    @PostMapping(value = "/saveNews")
     public @ResponseBody
     Map<String, Object> create(@Valid @RequestBody News newsEntity, BindingResult bindingResult) {
         if (checkError(bindingResult)) {
@@ -60,7 +55,7 @@ public class AppRESTController {
         return response;
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/saveComment")
+    @PostMapping(value = "/saveComment")
     public @ResponseBody
     Map<String, Object> create(@Valid @RequestBody Comment commentEntity, BindingResult bindingResult) {
         if (checkError(bindingResult)) {
@@ -70,7 +65,38 @@ public class AppRESTController {
         return response;
     }
 
-    public boolean checkError(BindingResult bindingResult) {
+    @GetMapping(value = "/aylienNews")
+    public @ResponseBody
+    List<News> findAllNewsFromApi() {
+        return newsApiService.getObj();
+    }
+
+
+    @GetMapping(value = "/aylienNews/{lang}")
+    public @ResponseBody
+    List<News> findByLang(@PathVariable("lang") String lang) {
+        return newsApiService.findByLang(lang);
+    }
+
+    ///find?lang={lang}&categoryId={categoryId}&sourceLocationsState={sourceLocationsState}
+    @GetMapping("/aylienNews/find")
+    public @ResponseBody
+    List<News> findByParams(@RequestParam String lang
+            , @RequestParam String categoryId
+            , @RequestParam(required = false) String sourceLocationsState) {
+        return newsApiService.findByParameters(lang, categoryId, sourceLocationsState);
+    }
+
+    @GetMapping("/error")
+    public @ResponseBody
+    String findFlight() {
+        return "Something gone wrong.";
+    }
+
+
+
+
+     boolean checkError(BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             List<FieldError> errors = bindingResult.getFieldErrors();
             response.put("message", "Error");

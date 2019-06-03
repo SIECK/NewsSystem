@@ -31,13 +31,18 @@ public class NewsApiRepository {
         apiInstance = new DefaultApi();
     }
 
-    public List<Story> findAll() {
+    private static StoriesParams.Builder getDefaultStoriesParams() {
         StoriesParams.Builder storiesBuilder = StoriesParams.newBuilder();
 
         storiesBuilder.setSortBy("social_shares_count.facebook");
-        storiesBuilder.setLanguage(Arrays.asList("en"));
         storiesBuilder.setPublishedAtStart("NOW-7DAYS");
         storiesBuilder.setPublishedAtEnd("NOW");
+
+        return storiesBuilder;
+    }
+
+    public List<Story> findAll() {
+        StoriesParams.Builder storiesBuilder = getDefaultStoriesParams();
 
         try {
             Stories result = apiInstance.listStories(storiesBuilder.build());
@@ -47,5 +52,34 @@ public class NewsApiRepository {
         }
     }
 
+    public List<Story> findByLang(String lang) {
+        StoriesParams.Builder storiesBuilder = getDefaultStoriesParams();
+
+        storiesBuilder.setLanguage(Arrays.asList(lang));
+
+        try {
+            Stories result = apiInstance.listStories(storiesBuilder.build());
+            return result.getStories();
+        } catch (ApiException e) {
+            return null;
+        }
+    }
+
+    public List<Story> findByParameters(String lang, String categoryId, String sourceLocationsState) {
+        StoriesParams.Builder storiesBuilder = getDefaultStoriesParams();
+        String categoriesTaxonomy = "iab-qag";
+
+        storiesBuilder.setLanguage(Arrays.asList(lang));
+        storiesBuilder.setCategoriesTaxonomy(categoriesTaxonomy);
+        storiesBuilder.setCategoriesId(Arrays.asList(categoryId));
+        storiesBuilder.setSourceLocationsState(Arrays.asList(sourceLocationsState));
+
+        try {
+            Stories result = apiInstance.listStories(storiesBuilder.build());
+            return result.getStories();
+        } catch (ApiException e) {
+            return null;
+        }
+    }
 }
 
