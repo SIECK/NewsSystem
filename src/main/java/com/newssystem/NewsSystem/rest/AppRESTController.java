@@ -5,7 +5,6 @@ import com.newssystem.NewsSystem.domain.News;
 import com.newssystem.NewsSystem.service.CommentService;
 import com.newssystem.NewsSystem.service.NewsApiService;
 import com.newssystem.NewsSystem.service.NewsService;
-import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
