@@ -6,4 +6,3 @@ jdk:
 
 script:
   - gradle assemble
-  - gradle check

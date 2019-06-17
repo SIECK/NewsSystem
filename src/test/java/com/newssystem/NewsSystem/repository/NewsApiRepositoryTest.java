@@ -15,13 +15,11 @@ public class NewsApiRepositoryTest {
     Story temp;
     String language,category,state;
     List<Story> storyList;
-    static int counter = 0;
     boolean containsCategory,containsState;
     @Before
     public void setUp() throws Exception{
         try{
             api = new NewsApiRepository();
-            counter ++;
             temp = api.findAll().get(0);
             containsCategory = false;
             containsState = false;

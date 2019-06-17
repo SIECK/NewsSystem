@@ -19,7 +19,6 @@ public class NewsApiServiceTest{
     private List<News> newsList;
     private NewsApiService nAS;
     private String language,category,state;
-    private static int counter = 0;
     private boolean containsCategory,containsState;
     @Before
     public void setUp() throws Exception{
@@ -27,7 +26,6 @@ public class NewsApiServiceTest{
             newsList = new ArrayList<News>();
             api = new NewsApiRepository();
             nAS = new NewsApiService(api);
-            counter ++;
             temp = api.findAll().get(0);
             containsCategory = false;
             containsState = false;

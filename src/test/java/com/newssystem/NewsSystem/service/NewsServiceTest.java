@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 public class NewsServiceTest {
     NewsRepository Mock1;
     NewsService nS;
-    News news,temp;
+    News news;
     News.Builder nB;
     List<News> newslist;
     @Before
