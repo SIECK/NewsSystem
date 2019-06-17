@@ -26,7 +26,8 @@ public class Comment {
     @NotNull(message = "Pole nie moze byc puste")
     private String data;
 
-    public Comment(String newsId, String comment, String author, String data) {
+    public Comment(String Id,String newsId, String comment, String author, String data) {
+        id = Id;
         NewsId = newsId;
         this.comment = comment;
         this.author = author;
@@ -34,11 +35,18 @@ public class Comment {
     }
 
     public Comment() {
+        id = "";
+        NewsId = "";
+        this.comment = "";
+        this.author = "";
+        this.data = "";
     }
 
     public String getId() {
         return id;
     }
+
+    public void setId(String ID) { id = ID; }
 
     public String getNewsId() {
         return NewsId;

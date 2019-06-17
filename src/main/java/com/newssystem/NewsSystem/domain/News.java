@@ -83,7 +83,7 @@ public class News {
             if (source == null || this.source.trim().isEmpty()) {
                 this.source = NOT_GIVEN;
             }
-            News news = new News();
+            News news = new News("Tytul", "Tresc", "01.01.2001", "Autor");
             news.id = this.id;
             news.title = this.title;
             news.author = this.author;
@@ -95,7 +95,7 @@ public class News {
         }
     }
 
-    public News() {
+    public News(String tytul, String tresc, String s, String autor) {
     }
 
     public String getId() {

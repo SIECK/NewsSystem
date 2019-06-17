@@ -12,8 +12,8 @@ import java.util.List;
 
 @Repository
 public class NewsApiRepository {
-    static String APP_ID = "28d1adbd";
-    static String API_KEY = "d2ca139d125b9040e52c1ea8039a59aa";
+    static String APP_ID = "014d3ecc";
+    static String API_KEY = "f29e2fd56f783e1f3f6bee3aabf227a1";
 
     private DefaultApi apiInstance;
 
