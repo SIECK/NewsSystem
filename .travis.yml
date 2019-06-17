@@ -5,4 +5,4 @@ jdk:
   - oraclejdk11
 
 script:
-  - gradle assemble
+  - gradle check
